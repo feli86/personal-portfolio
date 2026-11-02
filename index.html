@@ -1,16 +1,334 @@
- <!-- Back to top -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Felicia Frela, a Multimedia Computing student at UNIMAS.">
+
+    <title>Felicia Frela | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Felicia Frela.</a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="home section">
+            <div class="hero-content">
+                <p class="intro">HELLO, I'M</p>
+
+                <h1>Felicia Frela</h1>
+
+                <h2>Multimedia Computing Student</h2>
+
+                <p class="hero-description">
+                    I am a Year 3 Bachelor of Computer Science
+                    (Multimedia Computing) student at Universiti Malaysia
+                    Sarawak (UNIMAS). I am interested in web development,
+                    user interface design and emerging technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="welcome-feature">
+                    <button id="welcome-button" class="welcome-button">
+                        Say Hello!
+                    </button>
+
+                    <p id="welcome-message" aria-live="polite">
+                        Welcome to my personal portfolio!
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.jpg"
+                    alt="Portrait of Felicia Frela">
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights">
+            <div>
+                <h3>Year 3</h3>
+                <p>Undergraduate Student</p>
+            </div>
+
+            <div>
+                <h3>UNIMAS</h3>
+                <p>FCSIT</p>
+            </div>
+
+            <div>
+                <h3>Multimedia</h3>
+                <p>Computing</p>
+            </div>
+
+            <div>
+                <h3>Student Leader</h3>
+                <p>Campus Involvement</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="intro">MY WORK</p>
+                <h2>Featured Projects</h2>
+                <p>
+                    A selection of academic projects and work I have
+                    developed throughout my studies.
+                </p>
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web Development
+                </button>
+
+                <button class="filter-btn" data-filter="development">
+                    Software Development
+                </button>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="project-grid">
+
+                <article class="project-card" data-category="development">
+                    <img src="images/project1.jpg"
+                        alt="Scam Buster game project screenshot">
+
+                    <div class="project-info">
+                        <p class="project-category">Software Development</p>
+                        <h3>Scam Buster: Jangan Klik</h3>
+                        <p>
+                            An educational game designed to raise awareness
+                            about online scams. My contributions include
+                            character design, game visuals and animation.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="development">
+                    <img src="images/project2.jpg"
+                        alt="Campus Gallery application screenshot">
+
+                    <div class="project-info">
+                        <p class="project-category">Software Development</p>
+                        <h3>Campus Gallery</h3>
+                        <p>
+                            An Android application developed using
+                            Kotlin and Jetpack Compose to display
+                            a collection of campus-related images.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <img src="images/project3.jpg"
+                        alt="Personal portfolio website screenshot">
+
+                    <div class="project-info">
+                        <p class="project-category">Web Development</p>
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            A responsive personal website developed
+                            using HTML, CSS and JavaScript to showcase
+                            my background, skills and projects.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <img src="images/project4.jpg"
+                        alt="Online marketplace project screenshot">
+
+                    <div class="project-info">
+                        <p class="project-category">Web Development</p>
+                        <h3>Online Marketplace</h3>
+                        <p>
+                            A proposed online marketplace that connects
+                            local Sarawak sellers with customers through
+                            a digital platform.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="development">
+                    <img src="images/project5.jpg"
+                        alt="Academic project screenshot">
+
+                    <div class="project-info">
+                        <p class="project-category">Software Development</p>
+                        <h3>Academic Project 5</h3>
+                        <p>
+                            Replace this description with details of
+                            another academic project, including its
+                            purpose and your contribution.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="section-heading">
+                <p class="intro">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Little About Myself</h3>
+
+                    <p>
+                        I am Felicia Frela, a Year 3 Computer Science
+                        student specialising in Multimedia Computing
+                        at Universiti Malaysia Sarawak (UNIMAS).
+                    </p>
+
+                    <p>
+                        Throughout my university journey, I have developed
+                        an interest in combining technology and creativity
+                        through software development, web design and
+                        interactive digital experiences.
+                    </p>
+
+                    <p>
+                        Outside the classroom, I actively participate
+                        in student organisations and programmes. These
+                        experiences have helped me develop my
+                        communication, teamwork and leadership skills.
+                    </p>
+                </div>
+
+                <div class="about-details">
+
+                    <div class="detail-card">
+                        <h3>Education</h3>
+                        <p><strong>Universiti Malaysia Sarawak (UNIMAS)</strong></p>
+                        <p>Bachelor of Computer Science with Honours</p>
+                        <p>Multimedia Computing</p>
+                        <p>2023 – Present</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Java</span>
+                            <span>Kotlin</span>
+                            <span>UI/UX Design</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Leadership & Involvement</h3>
+
+                        <p>
+                            <strong>EXCO Media & Publicity</strong><br>
+                            PERTEKMA UNIMAS
+                        </p>
+
+                        <p>
+                            <strong>Programme Director</strong><br>
+                            From Campus to Industry: Alumni Workplace
+                            Visit & Career Sharing
+                        </p>
+
+                        <p>
+                            <strong>Student Organisation Involvement</strong><br>
+                            Active in university clubs, committees
+                            and student programmes.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="intro">LET'S CONNECT</p>
+                <h2>Get In Touch</h2>
+
+                <p>
+                    Thank you for taking the time to explore my portfolio.
+                    Feel free to connect with me through the platforms below.
+                </p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:feliciafrela@gmail.com">
+                    Email
+                </a>
+
+                <a href="YOUR_LINKEDIN_URL" target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="YOUR_GITHUB_URL" target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to Top Button -->
     <button id="back-to-top" aria-label="Back to top">
         ↑
     </button>
 
-
     <!-- Footer -->
     <footer>
-        <p>© 2026 Felicia Frela. Designed and developed by me.</p>
+        <p>© 2026 Felicia Frela. All Rights Reserved.</p>
+        <p>Designed and developed using HTML, CSS and JavaScript.</p>
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 </html>
