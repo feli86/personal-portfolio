@@ -1,53 +1,135 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felicia Frela's Portfolio</title>
+
+    <meta name="description" content="Felicia Frela's personal portfolio showcasing projects, skills and experience.">
+
+    <title>Felicia Frela | Portfolio</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>My Portfolio</h1>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
-    </nav>
+            <a href="#home" class="logo">FF<span>.</span></a>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my personal portfolio website!</p>
-    </section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of my projects.</p>
-    </section>
+            <a href="#contact" class="nav-button">Let's talk ↗</a>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a 3rd year Multimedia Computing student in Universiti Malaysia Sarawak.</p>
-    </section>
+        </nav>
+    </header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: feliciafrela@gmail.com</p>
-    </section>
 
-    <button onclick="changeMessage()">Click Me</button>
+    <main>
 
-    <p id="message">Thank you for visiting my portfolio!</p>
+        <!-- Home Section -->
+        <section id="home">
 
-    <script>
-        function changeMessage() {
-            document.getElementById("message").innerHTML =
-                "Next!";
-        }
-    </script>
+            <div class="hero-content">
+
+                <p>Hello, I'm</p>
+
+                <h1>Felicia Frela<span>.</span></h1>
+
+                <h2>Multimedia Computing Student</h2>
+
+                <p>
+                    I am a Year 3 Bachelor of Computer Science
+                    (Multimedia Computing) with Honours student at
+                    Universiti Malaysia Sarawak.
+                </p>
+
+                <a href="#projects">Explore My Work</a>
+
+            </div>
+
+            <div class="hero-image">
+                <!-- Add your profile image here later -->
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects">
+
+            <h2>Selected Projects</h2>
+
+            <p>A collection of my academic and creative work.</p>
+
+            <!-- Project cards will be added here -->
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Write your personal introduction here.
+            </p>
+
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience">
+
+            <h2>Experience & Involvement</h2>
+
+            <p>
+                Write about your leadership roles and involvement here.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <h2>Let's Connect</h2>
+
+            <p>Feel free to reach out to me.</p>
+
+            <a href="mailto:feliciafrela@gmail.com">
+                Send Me an Email
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Felicia Frela. All rights reserved.</p>
+
+    </footer>
+
+
+    <!-- Link external JavaScript -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
