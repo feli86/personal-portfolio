@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Felicia Frela, a Multimedia Computing student at UNIMAS.">
+    <meta name="description" content="Personal portfolio of Felicia Frela Alfered">
 
     <title>Felicia Frela Alfered | Personal Portfolio</title>
 
@@ -14,10 +13,14 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- =========================================
+         NAVIGATION BAR
+         Purpose: Provides navigation between
+         the main sections of the portfolio.
+    ========================================== -->
     <header>
         <nav class="navbar">
-            <a href="#home" class="logo">Felicia Frela.</a>
+            <a href="#home" class="logo">Felicia Frela's Portfolio.</a>
 
             <button class="menu-toggle" id="menu-toggle"
                 aria-label="Toggle navigation" aria-expanded="false">
@@ -28,15 +31,22 @@
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+
     <main>
 
-        <!-- Home Section -->
+        <!-- =========================================
+             HOME SECTION
+             Purpose: Introduces the portfolio owner,
+             academic background and interests.
+        ========================================== -->
         <section id="home" class="home section">
+
             <div class="hero-content">
                 <p class="intro">HELLO, I'M</p>
 
@@ -50,8 +60,8 @@
                     Sarawak (UNIMAS). I am interested in web development,
                     user interface design and digital communication.
 
-                    I enjoy exploring how technology and creativity can come together 
-                    to create meaningful digital experience.
+                    I enjoy exploring how technology and creativity can
+                    come together to create meaningful digital experiences.
                 </p>
 
                 <div class="hero-buttons">
@@ -64,9 +74,10 @@
                     </a>
                 </div>
 
+                <!-- Interactive welcome button -->
                 <div class="welcome-feature">
                     <button id="welcome-button" class="welcome-button">
-                        Say Hello!
+                        Hello!
                     </button>
 
                     <p id="welcome-message" aria-live="polite">
@@ -75,14 +86,22 @@
                 </div>
             </div>
 
+            <!-- Profile photograph -->
             <div class="hero-image">
                 <img src="images/profile.jpg"
                     alt="Portrait of Felicia Frela">
             </div>
+
         </section>
 
-        <!-- Highlights Section -->
+
+        <!-- =========================================
+             HIGHLIGHTS SECTION
+             Purpose: Displays selected academic and
+             extracurricular highlights at a glance.
+        ========================================== -->
         <section class="highlights">
+
             <div>
                 <h3>Computer Science</h3>
                 <p>Multimedia Computing</p>
@@ -94,136 +113,270 @@
             </div>
 
             <div>
-                <h3>PERTEKMA 25/26</h3>
+                <h3>Persatuan Teknologi Maklumat (PERTEKMA)</h3>
                 <p>EXCO Media & Publicity (Communication)</p>
             </div>
 
         </section>
 
-        <!-- Projects Section -->
+
+        <!-- =========================================
+             PROJECTS SECTION
+             Purpose: Showcases academic and personal
+             projects with descriptions and contributions.
+        ========================================== -->
         <section id="projects" class="section">
+
             <div class="section-heading">
                 <p class="intro">MY WORK</p>
                 <h2>Featured Projects</h2>
+
                 <p>
                     A selection of academic projects and work I have
                     developed and contributed to.
                 </p>
             </div>
 
-            <!-- Project Filter Buttons -->
+
+            <!-- Project category filters -->
             <div class="filter-buttons">
+
                 <button class="filter-btn active" data-filter="all">
                     All
                 </button>
 
-                <button class="filter-btn" data-filter="app">
-                    App Development
+                <button class="filter-btn" data-filter="development">
+                    Development
                 </button>
 
                 <button class="filter-btn" data-filter="uiux">
                     UI/UX Design
                 </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web Development
+                </button>
+
             </div>
 
-            <!-- Project Cards -->
+
+            <!-- Project cards -->
             <div class="project-grid">
 
+
+                <!-- PROJECT 1: SARAWAK LINGO -->
                 <article class="project-card" data-category="development">
+
                     <img src="images/project1.jpg"
-                        alt="Scam Buster game project screenshot">
+                        alt="Sarawak Lingo mobile application">
 
                     <div class="project-info">
-                        <p class="project-category">Software Development</p>
-                        <h3>Scam Buster: Jangan Klik</h3>
+
+                        <p class="project-category">Mobile Application Development</p>
+
+                        <h3>Sarawak Lingo</h3>
+
                         <p>
-                            An educational game designed to raise awareness
-                            about online scams. My contributions include
-                            character design, game visuals and animation.
+                            An educational mobile application designed to enhannce young Sarawakian
+                            children's readiness for elementary school through an engaging and culturally
+                            relevant Malay language learning experience.
                         </p>
+
+                        <p>
+                            Developed as part of a six-member team, the application features interactive
+                            lessons, quizzes and gamified exercises to make language learing enjoyable 
+                            while encouraging children to appreciate and preserve their cultural heritage.
+                        </p>
+
+                        <div class="skill-list">
+                            <span>Mobile Application</span>
+                            <span>Educational Technology</span>
+                            <span>Gamification</span>
+                            <span>Glide</span>
+                        </div>
+
                     </div>
                 </article>
 
-                <article class="project-card" data-category="development">
+
+                <!-- PROJECT 2: KUCHING ART APPLICATION -->
+                <article class="project-card" data-category="uiux">
+
                     <img src="images/project2.jpg"
-                        alt="Campus Gallery application screenshot">
+                        alt="Kuching ART mobile application prototype">
 
                     <div class="project-info">
-                        <p class="project-category">Software Development</p>
-                        <h3>Campus Gallery</h3>
+
+                        <p class="project-category">UI/UX Design & Prototyping</p>
+
+                        <h3>Kuching ART Mobile Application</h3>
+
                         <p>
-                            An Android application developed using
-                            Kotlin and Jetpack Compose to display
-                            a collection of campus-related images.
+                            A mobile application prototype designed to improve the user experience
+                            of the Autonomous Rapid Transit (ART) system in Kuching, Sarawak.
                         </p>
+
+                        <p>
+                            The design process involved interviewing different user personas, 
+                            including tourists, working adults, non-working adults and senior citizens
+                            to understand their transportation needs, preferences and challenges.
+                        </p>
+
+                        <p>
+                            Based on the findings, we designed different application features tailored 
+                            to the needs of various user groups with a focus on accessibility,
+                            convenience and user experience.
+                        </p>
+
+                        <div class="skill-list">
+                            <span>UI/UX Design</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                            <span>Figma</span>
+                        </div>
+
                     </div>
                 </article>
 
-                <article class="project-card" data-category="web">
-                    <img src="images/project3.jpg"
-                        alt="Personal portfolio website screenshot">
 
-                    <div class="project-info">
-                        <p class="project-category">Web Development</p>
-                        <h3>Personal Portfolio</h3>
-                        <p>
-                            A responsive personal website developed
-                            using HTML, CSS and JavaScript to showcase
-                            my background, skills and projects.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="project-card" data-category="web">
-                    <img src="images/project4.jpg"
-                        alt="Online marketplace project screenshot">
-
-                    <div class="project-info">
-                        <p class="project-category">Web Development</p>
-                        <h3>Online Marketplace</h3>
-                        <p>
-                            A proposed online marketplace that connects
-                            local Sarawak sellers with customers through
-                            a digital platform.
-                        </p>
-                    </div>
-                </article>
-
+                <!-- PROJECT 3: LIFE BELOW WATER -->
                 <article class="project-card" data-category="development">
-                    <img src="images/project5.jpg"
-                        alt="Academic project screenshot">
+
+                    <img src="images/project3.jpg"
+                        alt="Life Below Water educational game">
 
                     <div class="project-info">
-                        <p class="project-category">Software Development</p>
-                        <h3>Academic Project 5</h3>
+
+                        <p class="project-category">Game Development</p>
+
+                        <h3>Life Below Water</h3>
+
                         <p>
-                            Replace this description with details of
-                            another academic project, including its
-                            purpose and your contribution.
+                            An educational game inspired by United Nations Sustainable Development 
+                            Goal 14: Life Below Water, which promotes the conservation and sustainable
+                            use of oceans and marine resources.
                         </p>
+
+                        <p>
+                            The application integrates interactive learning materials, quizzes and 
+                            a leaderboard to encourage players to learn about marine conservation
+                            through an engaging gaming experience.
+                        </p>
+
+                        <div class="skill-list">
+                            <span>GUI Development</span>
+                            <span>Game Development</span> 
+                            <span>Animation</span>
+                            <span>Module Integration</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 4: MARINE CONSERVATION 2D GAME -->
+                <article class="project-card" data-category="development">
+
+                    <img src="images/project4.jpg"
+                        alt="Marine Conservation 2D Game">
+
+                    <div class="project-info">
+
+                        <p class="project-category">2D Game</p>
+
+                        <h3>Marine Conservation 2D Game</h3>
+
+                        <p>
+                           A 2D game developed using computer graphics programming in Visual Studio Code, 
+                            inspired by marine conservation and SDG 14: Life Below Water.
+                        </p>
+
+                        <p>
+                            Players take on the role of a lifeguard or marine conservationist tasked 
+                            with collecting falling turtle eggs from eroded coastal soil.
+                        </p>
+
+                        <p>
+                             Through interactive gameplay, the project highlights the impact of coastal 
+                            erosion on sea turtle nesting habitats and the importance of protecting marine 
+                            wildlife.
+                        </p>
+
+                        <div class="skill-list">
+                            <span>Computer Graphics</span>
+                            <span>2D Game Development</span>
+                            <span>Game mechanics</span></span>
+                            <span>Visual Studio Code</span>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 5: ONLINE AUCTION MARKETPLACE -->
+                <article class="project-card" data-category="web">
+
+                    <img src="images/project5.jpg"
+                        alt="Online auction marketplace website">
+
+                    <div class="project-info">
+
+                        <p class="project-category">Database Management</p>
+
+                        <h3>Online Auction Marketplace</h3>
+
+                        <p>
+                            A mobile application prototype designed
+                            to improve the user experience of the
+                            Autonomous Rapid Transit (ART) system
+                            in Kuching, Sarawak.
+                        </p>
+
+                        <p>
+                           Developed a locally hosted web-based auction marketplace connected to a 
+                            MySQL database. The system manages user accounts and auction listings, 
+                            including item descriptions, categories, starting prices, reserve prices,
+                            Buy Now prices, auction schedules and listing statuses.
+                        </p>
+
+                        <div class="skill-list">
+                            <span>HTMLspan>
+                            <span>MySQL</span>
+                        </div>
+
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- About Me Section -->
-         
+
+        <!-- =========================================
+             ABOUT ME SECTION
+             Purpose: Provides personal information,
+             educational background, interests and
+             extracurricular involvement.
+        ========================================== -->
         <section id="about" class="section about-section">
+
             <div class="section-heading">
                 <p class="intro">GET TO KNOW ME</p>
                 <h2>About Me</h2>
             </div>
 
+
             <div class="about-content">
 
+                <!-- Personal introduction -->
                 <div class="about-text">
+
                     <h3>A Little About Myself</h3>
 
                     <p>
-                        I am Felicia Frela, a Computer Science undergraduate
-                        specialising in Multimedia Computing at Universiti
-                        Malaysia Sarawak (UNIMAS).
+                        My name is Felicia Frela Alfered, people usually call me Frela.
+                        I am a Computer Science undergraduate specialising in Multimedia Computing at 
+                        Universiti Malaysia Sarawak (UNIMAS).
                     </p>
 
                     <p>
@@ -246,11 +399,16 @@
                         and encouraging the responsible adoption of
                         emerging technologies.
                     </p>
+
                 </div>
 
+
+                <!-- Education, interests and leadership -->
                 <div class="about-details">
 
+                    <!-- Education background -->
                     <div class="detail-card">
+
                         <h3>Education</h3>
 
                         <p>
@@ -271,9 +429,13 @@
                             Sijil Pelajaran Malaysia (SPM), Pure Science<br>
                             January 2018 – March 2022
                         </p>
+
                     </div>
 
+
+                    <!-- Areas of interest -->
                     <div class="detail-card">
+
                         <h3>Areas of Interest</h3>
 
                         <div class="skill-list">
@@ -283,16 +445,21 @@
                             <span>Artificial Intelligence</span>
                             <span>Digital Communication</span>
                             <span>Content Creation</span>
-                             <span>AI Literacy</span>
+                            <span>AI Literacy</span>
                         </div>
+
                     </div>
 
+
+                    <!-- Leadership and extracurricular involvement -->
                     <div class="detail-card">
+
                         <h3>Leadership & Involvement</h3>
 
                         <p>
                             <strong>EXCO Media & Publicity (Communication)</strong><br>
-                            Persatuan Teknologi Maklumat (PERTEKMA)
+                            Persatuan Teknologi Maklumat (PERTEKMA)<br>
+                            Session 2025/2026
                         </p>
 
                         <p>
@@ -309,19 +476,118 @@
                             <strong>Master Trainer</strong><br>
                             AI-Ready ASEAN, ASEAN Foundation
                         </p>
+
                     </div>
 
                 </div>
+
             </div>
         </section>
 
 
-             
+        <!-- =========================================
+             ACHIEVEMENTS SECTION
+             Purpose: Highlights academic recognition
+             and innovation competition achievements.
+        ========================================== -->
+        <section id="achievements" class="section">
 
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
             <div class="section-heading">
+                <p class="intro">MILESTONES & RECOGNITION</p>
+                <h2>Awards & Achievements</h2>
+
+                <p>
+                    Recognition of my academic performance
+                    and involvement in innovation.
+                </p>
+            </div>
+
+
+            <div class="achievement-list">
+
+                <!-- Dean's List: Semester 1, 2025/2026 -->
+                <div class="detail-card">
+
+                    <p class="project-category">February 2026</p>
+
+                    <h3>Dean's List Award 2025/2026-1</h3>
+
+                </div>
+
+
+                <!-- Dean's List: Semester 2, 2024/2025 -->
+                <div class="detail-card">
+
+                    <p class="project-category">August 2025</p>
+
+                    <h3>Dean's List Award 2024/2025-2</h3>
+
+                </div>
+
+
+                <!-- Dean's List: Semester 1, 2024/2025 -->
+                <div class="detail-card">
+
+                    <p class="project-category">March 2025</p>
+
+                    <h3>Dean's List Award 2024/2025-1</h3>
+
+                </div>
+
+
+                <!-- PIITRAM 2024 Silver Award -->
+                <div class="detail-card">
+
+                    <p class="project-category">February 2024</p>
+
+                    <h3>Silver Award – PIITRAM 2024</h3>
+
+                    <p>
+                        Awarded the Silver Medal in Category A –
+                        Student (Science & Technology) at the
+                        Pre-University Matriculation Innovation
+                        Competition 2024.
+                    </p>
+
+                    <p>
+                        Issued by Tamhidi Centre, Universiti
+                        Sains Islam Malaysia (USIM).
+                    </p>
+
+                    <p>
+                        As part of a six-member team, I contributed
+                        to the development of <strong>Sarawak Lingo</strong>,
+                        an innovative mobile application designed
+                        to prepare young Sarawakian children for
+                        elementary school through an engaging
+                        and culturally relevant Malay language
+                        learning experience.
+                    </p>
+
+                    <p>
+                        The application features interactive
+                        lessons, quizzes and gamified exercises
+                        to make language learning enjoyable while
+                        encouraging children to appreciate and
+                        preserve their cultural heritage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT SECTION
+             Purpose: Provides links for visitors,
+             recruiters and collaborators to connect.
+        ========================================== -->
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+
                 <p class="intro">LET'S CONNECT</p>
                 <h2>Get In Touch</h2>
 
@@ -329,36 +595,57 @@
                     Thank you for taking the time to explore my portfolio.
                     Feel free to connect with me through the platforms below.
                 </p>
+
             </div>
 
+
+            <!-- Contact and professional profiles -->
             <div class="contact-links">
+
                 <a href="mailto:feliciafrela@gmail.com">
                     Email
                 </a>
 
-                <a href="YOUR_LINKEDIN_URL" target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/felicia-frela-alfered-01649b341"
+                    target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
 
-                <a href="YOUR_GITHUB_URL" target="_blank"
-                    rel="noopener noreferrer">
+                <a href="YOUR_GITHUB_URL"
+                    target="_blank" rel="noopener noreferrer">
                     GitHub
                 </a>
+
             </div>
+
         </section>
 
     </main>
 
-    <!-- Back to Top Button -->
+
+    <!-- =========================================
+         BACK TO TOP BUTTON
+         Purpose: Allows visitors to quickly
+         return to the top of the webpage.
+    ========================================== -->
     <button id="back-to-top" aria-label="Back to top">
         ↑
     </button>
 
-    <!-- Footer -->
+
+    <!-- =========================================
+         FOOTER
+         Purpose: Displays copyright information
+         and the technologies used to build the site.
+    ========================================== -->
     <footer>
+
         <p>© 2026 Felicia Frela. All Rights Reserved.</p>
-        <p>Designed and developed using HTML, CSS and JavaScript.</p>
+
+        <p>
+            Designed and developed using HTML, CSS and JavaScript.
+        </p>
+
     </footer>
 
 </body>
