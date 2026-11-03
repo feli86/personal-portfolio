@@ -323,6 +323,14 @@ header {
     font-size: 14px;
 }
 
+.project-description {
+    margin-bottom: 16px;
+}
+
+.skill-list {
+    margin-top: 20px;
+}
+
 /* ABOUT SECTION */
 .about-section {
     max-width: none;
